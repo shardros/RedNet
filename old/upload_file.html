@@ -3,28 +3,32 @@
 <head>
     <title>Upload File</title>
     <style>
+
         h1 {
             font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-            font-size: 7em;
+            font-size: 24px;
             font-style: normal;
             font-variant: normal;
             font-weight: 500;
+            line-height: 26.4px;
         }
 
         h3 {
             font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-            font-size: 5em;
+            font-size: 14px;
             font-style: normal;
             font-variant: normal;
             font-weight: 500;
+            line-height: 15.4px;
         }
 
-        p   {
+        p, label, .submit {
             font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-            font-size: 1em;
+            font-size: 14px;
             font-style: normal;
             font-variant: normal;
             font-weight: 400;
+            line-height: 20px;
         }
 
         blockquote {
@@ -54,10 +58,6 @@
             display: block;
         }
 
-        input[type="file"], input[type="submit"] {
-            display: none;
-        }
-
         .custom-file-upload, .play {
             padding: 16px 0;
             text-align: center;
@@ -79,27 +79,21 @@
             color: white;
         }
 
+
     </style>
 </head>
 <body>
 <h1>Red Control Panel</h1>
 
 <form action="fileupload" method="post" enctype="multipart/form-data">
-    <label class="custom-file-upload">
-        <input type="file" accept=".mp3" name="filetoupload"/>
-        <h3>Select a MP3</h3>
-    </label>
+
+    <input type="file" accept=".mp3" name="filetoupload"/>
     <br/>
 
     <label class="play">
         <input type="submit" class="submit">
-        <h3>Play</h3>
+        <p>Play</p>
     </label>
-
-    <Button class="stop">
-
-    </Button>
 </form>
 </body>
 </html>
-
